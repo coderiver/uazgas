@@ -1,99 +1,1163 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.search
+	width: 100%
+	background: #F6F6F6 
+	position: relative
+	&__inner
+		width: 1200px
+		margin: 0 auto
+		+clr
+	form
+		width: 960px
+		float: right
+		height: 58px
+		+vertical
+		text-align: left
+	&__keyword
+		width: 479px
+		box-shadow: 0 1px 0 #d7d7d7, inset 0 1px 3px rgba(0, 0, 0, 0.39)
+		display: inline-block
+		vertical-align: middle
+		border-radius: 5px 0 0 5px
+		+fs(15)
+		+med
+		color: $text 
+		padding: 8px 15px 8px 15px
+		+placeholder-color(#979797)
+	&__submit
+		margin-left: -2px
+		+vertical
+		height: 37px
+		width: 204px
+		color: #fff
+		border-radius: 0 5px 5px 0
+		background: #0093c4
+		&:hover
+			background: lighten(#0093c4, 5%)
+		&:active
+			background: darken(#0093c4, 5%)
+		i
+			+as
+			+fs(17)
+			margin-right: 10px
+			display: inline-block
+			vertical-align: middle
+		span
+			+med
+			+fs(15)
+			display: inline-block
+			vertical-align: middle
+	&__prod
+		height: 37px
+		width: 236px
+		background: $green
+		+vertical
+		display: inline-block
+		vertical-align: middle
+		color: #fff
+		border-radius: 5px
+		float: right
+		margin-top: 11px
+		position: relative
+		&:hover
+			background: lighten($green, 5%)
+		&:active
+			background: darken($green, 5%)
+		i
+			+as
+			+fs(17)
+			margin-right: 10px
+			display: inline-block
+			vertical-align: middle
+		span			
+			+fs(15)
+			+med
+			display: inline-block
+			vertical-align: middle
+.main
+	padding-top: 13px
+	&__inner
+		width: 1200px
+		margin: 0 auto
+		+clr
+.content
+	width: 940px
+	float: left
+	padding: 25px 20px 0 20px
+	&_mod
+		padding: 20px 20px 0 20px
+	h2, h3
+		padding-left: 15px
+	&__top
+		border-bottom: 1px solid #d7d7d7
+		.date
+			float: right
+			+fs(13)
+			margin-right: 5px
+		.more
+			margin: 8px 15px 0 0 
+.more
+	float: right
+	+vertical
+	+fs(13)
+	&:hover
+		span
+			text-decoration: underline
+		.more__icon
+			text-decoration: none
+	span
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		+vertical
+		width: 22px
+		height: 22px
+		border-radius: 50%
+		background: $blue
+		margin-right: 6px
+	i
+		+fs(17)
+		color: #fff
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 1px
+		
+
+
+.popular
+	border-bottom: 1px solid #d7d7d7
+	margin-bottom: 30px
+	&__slider
+		width: 100%
+		margin: 0 auto
+		position: relative
+	&__box
+		padding-top: 30px
+		padding-bottom: 35px
+		+clr
+		width: 100%
+	&__item
+		width: 25%
+		display: block
+		float: left
+		text-align: center
+		span
+			+med
+			+fs(15)
+		&:hover
+			span
+				text-decoration: underline
+	&__img
+		height: 120px
+		+vertical
+		width: 100%
+		margin-bottom: 10px
+		img
+			display: inline-block
+			vertical-align: middle
+	&__buttons
+		span
+			cursor: pointer
+			display: block
+			position: absolute
+			top: 50%
+			margin-top: -40px
+			z-index: 9999
+			+user-select(none)
+	&__prev
+		left: 0
+		+s(prev)
+	&__next
+		right: 0
+		+s(next)
+
+
+.category
+	width: 100%
+	border-bottom: 1px solid #d7d7d7
+	&__box
+		+clr
+		padding: 30px 0 35px 
+		text-align: left
+		+fs(0.1)
+		word-spacing: 0px 
+	&__item
+		width: 24.9%
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		margin-bottom: 10px
+		+fs(15)
+		+med
+		line-height: 1.2
+		&:hover
+			span
+				text-decoration: underline
+		div
+			height: 150px
+			+vertical
+			width: 100%
+			position: relative
+			overflow: hidden
+			img
+				display: inline-block
+				vertical-align: middle
+	&__logo
+		position: absolute
+		top: 0
+		right: 5px
+		display: block
+		+vertical
+		height: 50px
+		i
+			display: inline-block
+			vertical-align: middle
+			&.logo-uaz
+				+s(logo-uaz-black)
+			&.logo-az
+				+s(logo-az-black)
+			&.logo-fiat
+				+s(logo-fiat-black)
+			&.logo-hyundai
+				+s(logo-hyundai-black)
+
+.items
+	padding: 28px 0 0 0 
+	&__box
+		padding: 0 
+		width: 100%
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+.item
+	display: inline-block
+	width: 422px
+	border: 1px solid #D7D7D7
+	border-radius: 5px
+	text-align: left
+	padding: 14px 19px
+	margin: 15px 0  
+	+clr
+	&:hover
+		.item__title
+			text-decoration: underline
+	&__title
+		+fs(15)
+		+med
+		color: $blue
+		margin-bottom: 8px
+		display: block
+	&__date
+		+fs(14)
+		color: #8d8d8d
+		+reg
+	p
+		margin-bottom: 10px 
+	img
+		float: left
+		margin: 3px 10px 0 0
+		width: 138px
+		height: 103px
+
+.way
+	padding: 0 20px 8px 16px
+	li
+		display: inline-block
+		&:after
+			+as
+			content: "\f105"
+			+fs(15)
+			color: #bdbdbd 
+			margin: 0 5px 
+		&.is-active
+			a
+				color: $text
+				&:hover
+					text-decoration: none
+			&:after
+				display: none
+		a
+			+reg
+			+fs(13)
+			&:hover
+				text-decoration: underline
+
+
+//page ITEM
+.p-item
+	width: 100%
+	+clr
+	border-bottom: #d7d7d7 1px dotted
+	padding-bottom: 40px  
+.artifact
+	width: 480px
+	overflow: hidden
+	padding: 50px 0 0 0 
+	float: left
+	+user-select(none)
+	&__top
+		width: 100%
+		height: 340px
+		margin-bottom: 20px
+		position: relative
+	&__slides
+		height: 100%
+		.slide
+			height: 100%
+			width: 100%
+			text-align: center
+			img
+				height: 100%
+				width: auto
+	&__bottom
+		width: 100%
+		overflow: hidden
+	&__pager
+		width: 700px
+		margin: 0 10px
+		.slide
+			max-width: 150px
+			height: 150px
+			+vertical
+			cursor: pointer
+			border: 1px solid #c1c1c1
+			border-radius: 5px
+			float: left
+			margin: 0 4px 
+			img
+				display: inline-block
+				vertical-align: middle
+				max-height: 100%
+				max-width: 100%
+	&__prev, &__next
+		position: absolute
+		top: 155px
+		display: block
+		z-index: 9999
+		cursor: pointer 
+	&__prev
+		left: 20px
+		+s(prev)
+	&__next
+		right: 20px
+		+s(next)
+.char
+	width: 410px
+	padding: 35px 0 0 40px
+	float: left
+	&__top
+		width: 100%
+		+vertical
+		text-align: left
+	&__label, .select, &__submit, &__it
+		display: inline-block
+		vertical-align: middle
+		color: $text 
+		+med
+	&__label
+		+fs(15)
+		margin-right: 30px 
+	&__it
+		+fs(13)
+		+reg
+		margin-right: 15px
+		margin-left: 4px
+	&__submit
+		color: $green
+		background: #fff
+		border: 1px solid #D7D7D7
+		padding-bottom: 2px
+		+fs(15)
+		padding: 7px 13px 9px 13px
+		border-radius: 5px
+		position: relative
+		&:active
+			top: 1px
+	.select
+		border: 1px solid #D7D7D7
+		box-shadow: none
+		height: 36px
+		margin-right: 5px 
+		.select__text
+			padding: 1px 36px 0 10px
+		.select__list
+			width: 100%
+			right: auto
+			left: -1px
+			margin-top: -2px
+			border-radius: 0 0 5px 5px
+			overflow: hidden
+			li
+				padding: 4px 13px  
+		i
+			top: 11px
+			right: 11px
+			color: $text 
+	&__list
+		+reg
+		+fs(15)
+		color: $text
+		padding: 40px 0 30px 0 
+		li
+			+clr
+			border-bottom: 1px dotted #d7d7d7
+			padding: 2px 0 3px
+		i
+			color: $blue
+		span
+			display: block
+			width: 50%
+			float: left
+	p
+		margin-bottom: 10px
+		+fs(13)
+	&__right
+		+med
+//similar
+.similar
+	width: 100%
+	display: inline-block
+	text-align: left
+	padding: 30px 0 25px 0
+	border-bottom: 1px dotted #d7d7d7
+	margin-bottom: 15px
+	+fs(0.1) 
+	&_mod
+		margin-bottom: 0
+	&__item
+		width: 24.9%
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		padding: 10px 0 10px 
+		position: relative
+		&_mod
+			&:after
+				content: "" 
+				position: absolute
+				right: 0
+				top: 50%
+				height: 250px
+				margin-top: -125px
+				border-right: 1px dotted #d7d7d7 
+		.name
+			+fs(15)
+			+med
+			color: $blue
+			&:hover
+				text-decoration: underline
+		.comp
+			+fs(13)
+			+reg
+			color: #707070
+			display: block
+			margin-bottom: 10px
+		p
+			+fs(13)
+			color: $text
+			max-width: 170px
+			margin: 0 auto
+			margin-bottom: 10px
+		.price
+			+fs(15)
+			color: $text
+			+med
+			margin-right: 7px
+	&__img
+		width: 100%
+		height: 125px
+		+vertical
+		img
+			display: inline-block
+			vertical-align: top
+	&__bot
+		width: 100%		 
+		+vertical
+		span, a
+			display: inline-block
+			vertical-align: middle
+
+
+
+//NEWS
+.news
+	width: 100%
+	padding: 20px 0 22px 0 
+	+clr
+	&__img
+		width: 450px
+		padding: 0 20px 0 20px 
+		float: left
+		img
+			width: 100%
+	&__info
+		width: 433px
+		float: left
+		padding-right: 15px 
+	&__title
+		+med
+		color: $blue
+		+fs(15)
+		margin-bottom: 10px
+		display: inline-block
+		&:hover
+			text-decoration: underline
+	&__bot
+		+vertical
+		width: 100%
+		text-align: left
+	p
+		margin-bottom: 10px
+	&__more
+		+vertical
+		color: $blue
+		display: inline-block
+		vertical-align: middle
+		float: right
+		margin-right: 4px 
+		&:hover
+			span
+				text-decoration: underline
+		i
+			+as
+			+fs(17)
+			margin-right: 6px
+			display: inline-block
+			vertical-align: middle
+		span
+			+fs(13)
+			+reg
+			display: inline-block
+			vertical-align: middle
+			line-height: 1.2
+
+.date
+	+fs(14)
+	color: #8d8d8d
+	+reg
+	display: inline-block
+	vertical-align: middle
+
+.items_mod
+	width: 100%
+	+clr
+	border-top: 1px dotted #d7d7d7
+	padding: 20px 0
+.items__box_mod
+	padding: 0 
+	width: 100%
+	+clr
+	position: relative
+	&:before
+		height: 100%
+		content: "" 
+		width: 0
+		position: absolute
+		top: 0
+		left: 50% 
+		border-left: 1px dotted #d7d7d7 
+.item_mod
+	text-align: left
+	padding: 0 20px
+	width: 429px
+	+clr
+	float: left
+	.item__title
+		+fs(15)
+		+med
+		color: $blue
+		margin-bottom: 8px
+		display: block
+		&:hover
+			text-decoration: underline
+	p
+		height: 80px
+		overflow: hidden 
+		margin-bottom: 10px
+	img
+		float: left
+		margin: 3px 10px 0 0
+		width: 138px
+		height: 103px
+.item
+	&__more
+		+vertical
+		color: $blue
+		display: inline-block
+		vertical-align: middle
+		float: right
+		&:hover
+			span
+				text-decoration: underline
+		i
+			+as
+			+fs(17)
+			margin-right: 6px
+			display: inline-block
+			vertical-align: middle
+		span
+			+fs(13)
+			+reg
+			display: inline-block
+			vertical-align: middle
+			line-height: 1.2
+
+.pages
+	padding: 10px 15px 10px 25px
+	height: 36px
+	background: #f6f6f6
+	border: 1px solid #d7d7d7
+	border-left: none
+	border-right: none  
+	+clr  
+	a
+		+reg
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		i
+			+fs(17)
+			+as
+			display: inline-block
+			vertical-align: middle
+		span
+			line-height: 1.2
+			+fs(13)
+			display: inline-block
+			vertical-align: middle
+			margin: 0 7px
+	ul
+		display: inline-block
+		vertical-align: middle
+		margin: 0 7px 
+		li
+			display: inline-block
+			vertical-align: middle
+			a
+				width: 40px
+				height: 36px
+				+vertical
+				border-radius: 5px
+				&:hover
+					color: lighten($blue, 10%) 
+				&:active
+					color: darken($blue, 10%)  
+				&.is-active
+					background: $blue
+					color: #fff
+					&:hover
+						color: #fff
+						background: lighten($blue, 10%)  
+					&:active
+						background: darken($blue, 10%) 
+				span
+					display: inline-block
+					vertical-align: middle
+					+fs(13)
+					margin: 0
+	&__prev, &__next
+		&:hover
+			span
+				text-decoration: underline
+	&__left
+		float: left
+	&__right
+		float: right
+	&__label
+		line-height: 1.2
+//NEW ITEM
+.text
+	padding: 10px 0 0 0 
+	+fs(0.1)
+	p
+		padding: 0 15px
+		line-height: 1.3
+		max-width: 890px
+		margin-bottom: 7px
+	img
+		margin: 10px 0 30px 13px 
+	div
+		+clr
+		padding: 10px 0 7px 17px
+		border-bottom: 1px dotted #d7d7d7 
+		margin-bottom: 25px
+		img
+			float: left
+			margin: 0 25px 15px 0
+		p
+			padding: 0
+			max-width: 100%
+	h3
+		margin-bottom: 10px
+		max-width: 860px
+		line-height: 1.3
+	h2
+		margin-top: 10px
+		margin-bottom: 15px
+		line-height: 1.3
+	table
+		width: 100%
+		border-bottom: 1px dotted #d7d7d7 
+		margin-bottom: 30px
+		tr
+			background: #fff
+			border-top: 1px dotted #d7d7d7 
+			td, th
+				padding: 9px 30px 9px 40px
+				width: 60px
+				text-align: left
+				+reg
+				+fs(15)
+				color: $text
+				border-left: 1px dotted #d7d7d7 
+				font-weight: normal
+				&:first-child
+					padding: 9px 20px 9px 18px
+					width: 530px
+					+med
+					border-left: none
+			th
+				+med
+			&:nth-child(even)
+				background: #f6f6f6
+	ul
+		padding-left: 20px 
+		padding-top: 5px
+		li
+			+fs(14)
+			+reg
+			color: $text
+			line-height: 1.3
+			padding-left: 25px
+			position: relative
+			padding-bottom: 7px
+			max-width: 865px
+			&:before
+				position: absolute
+				top: 3px
+				left: 0
+				width: 10px
+				height: 10px
+				border: 1px solid #d8d8d8
+				background: #f6f6f6
+				content: ""  
+				border-radius: 50%
+			strong
+				+bold
+
+
+//checkout
+.form
+	&__row
+		padding: 27px 50px
+		background: #f6f6f6
+		border-bottom: 1px solid #d7d7d7 
+		margin-bottom: 5px
+		&_mod 
+			padding: 10px 14px 12px 26px
+			text-align: justify
+			+fs(0.1)
+			word-spacing: 0px
+			&:after
+				content: ""
+				width: 100%
+				display: inline-block
+	&__check
+		margin: 6px 0 
+	&__box
+		padding: 15px 15px 15px 15px
+		border-bottom: 1px dotted #d7d7d7
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+		.checkbox
+			margin-right: 35px
+		h3
+			padding: 0
+			margin-bottom: 15px
+	&__in
+		+clr
+		padding: 20px 0 0
+		width: 444px
+		display: inline-block
+		vertical-align: middle
+	&__item
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+		label
+			margin-bottom: 8px 
+		.label-50
+			display: inline-block
+			vertical-align: top
+			width: 217px
+		.label-22
+			display: inline-block
+			vertical-align: top
+			width: 102px
+			input
+				width: 64px 
+		.label-74
+			display: inline-block
+			vertical-align: top
+			width: 342px
+			input
+				width: 314px
+		.name
+			margin-bottom: 3px
+			display: block
+			color: #707070
+			+fs(13)
+			+reg 
+		input
+			color: $text
+			+fs(15)
+			line-height: 1.3 
+			+med
+			width: 189px
+			padding: 8px 13px 8px
+			background-color: #FFF
+			border: 1px solid #D7D7D7
+			border-radius: 5px
+	.select
+		border: 1px solid #D7D7D7
+		box-shadow: none
+		width: 215px
+		height: 36px
+		.select__text
+			padding: 1px 36px 0 12px
+		.select__list
+			width: 100%
+			right: auto
+			left: -1px
+			margin-top: -2px
+			border-radius: 0 0 5px 5px
+			overflow: hidden
+			li
+				padding: 4px 13px  
+		i
+			top: 11px
+			right: 11px
+			color: $text 
+	&__comment
+		padding: 15px 15px 10px 15px
+		border-bottom: 1px solid #d7d7d7
+		&-inner
+			text-align: justify
+			+fs(0.1)
+			word-spacing: 0px
+			width: 100%
+			&:after
+				content: ""
+				width: 100%
+				display: inline-block 
+		.name
+			margin-bottom: 3px
+			display: block
+			color: #707070
+			+fs(13)
+			+reg 
+		.label-50
+			width: 444px
+			display: inline-block
+		input, textarea
+			width: 416px
+			color: $text
+			+fs(15)
+			line-height: 1.3 
+			+med
+			padding: 8px 13px 8px
+			background-color: #FFF
+			border: 1px solid #D7D7D7
+			border-radius: 5px
+			margin-bottom: 8px
+		textarea
+			width: 882px
+			height: 50px
+			resize: none
+
+
+//cart
+.cart-box
+	width: 100%
+	&_mod
+		padding-bottom: 15px
+.cart-item
+	padding: 11px 15px 10px
+	+vertical
+	text-align: left
+	border-top: 1px dotted #d7d7d7 
+	&:first-child
+		border-top: none
+	.left
+		+vertical
+		text-align: left
+		display: inline-block
+		vertical-align: middle
+		width: 410px
+		.img, p
+			display: inline-block
+			vertical-align: middle
+		.img
+			width: 55px
+			padding: 0 10px
+			img
+				max-width: 100%
+				min-height: 100%
+		p
+			margin: 0
+			span
+				display: block
+				color: #707070
+				+fs(13) 
+			a
+				+fs(15)
+				+med
+				color: $blue 
+	.right
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		text-align: right
+		width: 500px
+		.char__it
+			margin-left: 7px
+			margin-right: 25px
+		.char__label
+			margin-right: 20px
+		form
+			border-right: 1px solid #d7d7d7
+			height: 58px
+			display: inline-block
+			vertical-align: middle
+			+vertical
+			margin-right: 20px
+			text-align: left
+			span, div
+				display: inline-block
+				vertical-align: middle
+		.price
+			display: inline-block
+			vertical-align: middle
+			color: $text 
+			+med
+			+fs(15)
+		.delete
+			vertical-align: middle
+			display: inline-block
+			text-align: justify
+			+fs(0.1)
+			word-spacing: 0px
+			width: 265px
+			&:after
+				content: ""
+				width: 100%
+				display: inline-block 
+		.select
+			border: 1px solid #D7D7D7
+			box-shadow: none
+			height: 36px
+			margin-right: 5px 
+			.select__text
+				padding: 1px 25px 0 10px
+				min-width: 17px
+			.select__list
+				width: 100%
+				right: auto
+				left: -1px
+				margin-top: -2px
+				border-radius: 0 0 5px 5px
+				overflow: hidden
+				li
+					padding: 4px 13px  
+			i
+				top: 11px
+				right: 11px
+				color: $text 
+	&_mod
+		.left
+			width: 285px
+		.center
+			width: 400px
+			+reg
+			+fs(13)
+			color: $text
+			display: inline-block 
+			vertical-align: middle
+			margin-bottom: 0
+		.right
+			width: 220px
+			a
+				display: inline-block
+				vertical-align: middle
+			.char__label
+				margin-right: 7px
+.cart-bottom
+	padding: 10px 15px 12px
+	+vertical
+	text-align: right
+	background: #f6f6f6
+	border-bottom: 1px solid #d7d7d7  
+	border-top: 1px solid #d7d7d7  
+	.btn-order
+		margin-left: 50px
+	h3
+		display: inline-block
+		vertical-align: middle
+
+
+
+//LEVET 2
+.alphabet
+	width: 100%
+	&__top
+		padding: 10px 15px 10px
+		+clr
+		background: #f6f6f6
+		border-bottom: 1px solid #d7d7d7
+	&__left, &__center, &__right
+		+vertical
+		height: 38px
+	&__left
+		text-align: left
+		width: 370px
+		float: left
+	&__center
+		text-align: left
+		float: left
+	&__right
+		text-align: right
+		float: right
+	&__label
+		+fs(13)
+		+reg
+		color: $text
+		display: inline-block
+		vertical-align: middle
+	&__list
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+		+fs(0.1)
+		li
+			display: inline-block
+			margin: 0 3px 
+			a
+				color: $blue
+				+vertical
+				width: 51px
+				height: 36px
+				border: 1px solid #d7d7d7
+				display: block
+				border-radius: 5px
+				background: #fff
+				span
+					display: inline-block
+					vertical-align: middle
+					+reg
+					+fs(13)
+				&.is-active
+					position: relative
+					color: #fff
+					background: $blue  
+					border: none
+					&:after
+						+arr(11, 8, $blue, b)
+						content: ""
+						position: absolute
+						top: 100%
+						left: 50%
+						margin-left: -5px 
+	&__link
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px
+		+fs(13)
+		+reg
+		color: #888888
+		&:hover
+			text-decoration: underline
+		i
+			+as
+			+fs(15)
+			margin-left: 7px
+		&.is-active
+			color: $blue
+	&__button
+		color: $blue
+		+vertical
+		width: 91px
+		height: 36px
+		border: 1px solid #d7d7d7
+		display: inline-block
+		border-radius: 5px
+		margin-left: 10px 
+		background: #fff
+		span
+			display: inline-block
+			vertical-align: middle
+			+reg
+			+fs(13)
+			line-height: 1.2
+		i
+			+fs(18)
+			+as
+			display: inline-block
+			vertical-align: middle
+			margin-top: 4px
+			margin-left: 7px 
+		&.is-active
+			position: relative
+			color: #fff
+			background: $blue  
+			border: none
+	&__bottom
+		padding: 10px 0 12px
+		border-bottom: 1px dotted #d7d7d7 
+		ul
+			+vertical
+			+fs(0)
+			li
+				display: inline-block
+				vertical-align: middle
+				a
+					+vertical
+					width: 36px
+					padding: 10px 0 8px 
+					color: $blue
+					border-radius: 4px
+					display: inline-block
+					span
+						display: inline-block
+						vertical-align: middle
+						+fs(13)
+						+ttu
+					&.is-active
+						background: $blue
+						color: #fff  
+
+.text-box
+	padding: 35px 0 20px
+	border-bottom: 1px solid #d7d7d7
+	h1
+		margin-bottom: 10px
+	h3
+		+fs(17)
+		+ttu
+		margin-bottom: 10px
+	p
+		padding: 0 15px
 
 
 

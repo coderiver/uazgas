@@ -1,0 +1,414 @@
+.header
+	width: 100%
+	.inner
+		width: 1200px
+		margin: 0 auto
+		+clr
+	&__top
+		background: $text
+		ul.top-nav
+			width: 765px
+			text-align: center
+			float: left
+			border-right: 1px solid #454545 
+			li
+				display: inline-block
+				padding: 0 14px 
+				height: 43px
+				+vertical
+				a
+					+reg
+					+fs(13)
+					color: #fff 
+					display: inline-block
+					vertical-align: middle
+					&:hover
+						text-decoration: underline
+	&__download
+		width: 219px
+		float: left
+		position: relative
+		a
+			display: block
+			+vertical
+			height: 43px
+			background: $green
+			text-align: left 
+			padding: 0 40px 0 24px 
+			position: relative
+			&:hover
+				background: lighten($green, 5%)
+			&:active
+				background: darken($green, 5%)
+			span
+				display: inline-block
+				vertical-align: middle
+				+fs(13)
+				+reg
+				color: #ffffff
+			i
+				+as
+				+fs(15)
+				color: #b2df51
+				display: inline-block
+				vertical-align: middle 
+				position: absolute
+				top: 14px
+				right: 20px
+		ul
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			visibility: hidden
+			opacity: 0
+			will-change: opacity
+			+transition(opacity 0.3s)
+			&.is-open
+				visibility: visible
+				opacity: 1
+			li
+				display: block
+				padding: 0
+				height: auto
+				border-right: none
+				a
+					display: block
+					padding: 15px 40px 15px 24px 
+					height: auto
+					&:hover
+						background: lighten($green, 5%)
+					&:active
+						background: darken($green, 5%)
+	&__login
+		padding: 2px 0 0 27px
+		float: left
+		height: 41px
+		+vertical
+		text-align: left
+		a
+			+reg
+			color: #fff 
+			+fs(13)
+			display: inline-block
+			vertical-align: middle
+			&:hover
+				text-decoration: underline
+			i
+				+fs(15)
+				+as
+				margin-right: 8px
+	&__bottom
+		background: #fff
+	.logo
+		display: block
+		float: left
+		margin: 29px 0 0 20px
+		img
+			float: left
+	.contacts
+		padding: 25px 0 0 55px 
+		float: left
+		width: 960px
+		p
+			+med
+			+fs(15)
+			color: $text
+			line-height: 18px
+		a
+			+fs(13)
+			color: $green 
+			+reg
+			&:hover
+				text-decoration: underline
+			i
+				+as
+				margin-right: 7px
+		&__title
+			+reg
+			+fs(13)
+			color: $text 
+			margin-bottom: 5px
+			display: inline-block
+		.city
+			display: inline-block
+			vertical-align: bottom
+			.select
+				width: 148px
+				display: block
+		.address
+			display: inline-block
+			vertical-align: bottom
+			padding: 0 0 0 25px 
+		.request
+			display: inline-block
+			vertical-align: bottom
+			width: 190px
+			padding: 0 0 0 50px 
+			i
+				+as
+				+fs(21)
+				color: #fff
+				background: $green
+				padding: 5px 6px 6px 5px
+				border-radius: 50%  
+				float: left
+				margin: 5px 10px 0 0
+			span
+				display: block
+			.is-green
+				color: $green
+				+fs(15)
+				+med 
+			.contacts__title
+				margin-bottom: 0
+		.callback
+			display: inline-block
+			vertical-align: bottom
+			padding: 0 0 0 35px 
+	.nav
+		padding-top: 15px
+		float: right
+		li
+			float: right
+			position: relative
+			a
+				display: block
+				+fs(15)
+				color: #fff
+				+med
+				background: $blue
+				padding: 11px 13px 11px 12px
+				+ttu
+				letter-spacing: 0.07px 
+				i
+					margin-left: 9px
+				&.is-first
+					padding-left: 22px
+					border-radius: 4px 0 0 4px
+				&.is-last
+					padding-right: 30px 
+					border-radius: 0 4px 4px 0
+				&.is-active
+					background: $text
+				&:hover
+					background: $text 
+		&__sub
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			padding: 0
+			z-index: 999
+			opacity: 0
+			will-change: opacity
+			+transition(opacity 0.3s)
+			&.is-open
+				visibility: visible
+				opacity: 1
+			li
+				width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

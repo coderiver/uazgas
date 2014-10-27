@@ -1,0 +1,153 @@
+.sidebar
+	width: 220px
+	float: left
+	margin-top: -66px
+	position: relative
+	z-index: 99
+	&.sidebar-in
+		margin-top: 0
+	&__box
+		border-radius: 5px
+		overflow: hidden
+		margin-bottom: 17px
+		&.is-blue
+			background: $blue 
+			padding: 8px 0 0 0
+			.sidebar__title
+				background: #F6F6F6 
+		&.is-green
+			border: 1px solid #d7d7d7
+			.sidebar__title
+				background: $green 
+				color: #fff 
+		&.is-yellow
+			border: 1px solid #d7d7d7
+			.sidebar__title
+				background: $yellow 
+	&__title
+		height: 58px
+		+vertical
+		text-align: left
+		padding: 0 0 0 20px
+		+fs(17)
+		color: $text
+		+med
+		display: block
+		i
+			+as
+			display: inline-block
+			vertical-align: middle
+			margin-right: 7px
+		span
+			display: inline-block
+			vertical-align: middle	
+			+ttu	
+	&__more
+		+fs(13)
+		+reg
+		color: $blue
+		text-decoration: none
+		display: inline-block
+		margin: 0 0 15px 20px
+		padding-right: 15px
+		position: relative
+		i
+			+as
+			+fs(17)
+			position: absolute
+			top: 1px
+			right: 0
+		span
+			border-bottom: 1px dashed $blue
+		&:hover
+			text-decoration: none
+			span
+				border-bottom: none
+	&__banner
+		+clr
+		margin: 0 auto
+		display: block
+		width: 201px
+		img
+			float: left
+	&__list
+		padding: 0
+		background: #ffffff 
+		li
+			a
+				+reg
+				+fs(13)
+				padding: 11px 15px 11px 20px
+				position: relative
+				display: block
+				color: $text
+				border-top: 1px dashed #d7d7d7
+				span
+					position: absolute
+					top: 50%
+					right: 6px
+					width: 55px
+					height: 40px
+					display: block
+					margin-top: -20px
+					background-position: center center
+					background-repeat: no-repeat
+					+vertical
+					i
+						display: inline-block
+						vertical-align: middle
+						+as
+						width: auto
+						height: auto
+						+fs(27)
+						color: #606060 
+				&:hover
+					text-decoration: underline
+				&.is-first
+					border-top: none
+				&.logo-az
+					i
+						+s(side-az)
+				&.logo-uaz
+					i
+						+s(side-uaz)
+				&.logo-fiat
+					i
+						+s(side-fiat)
+				&.logo-hyundai
+					i
+						+s(side-hyundai)
+				&.logo-chemistry
+					i
+						+s(chemistry) 
+				&.logo-disc
+					i
+						+s(disc)
+				&.logo-battery
+					i
+						+s(battery)
+				&.logo-accessories
+					i
+						+s(accessories)
+				&.logo-foreign-car
+					i
+						+s(foreign-car)
+				&.logo-tools
+					i
+						+s(tools)
+				&.logo-materials
+					i
+						+s(materials)
+				&.logo-electronics
+					i
+						+s(electronics)
+		&_mod
+			background: $blue 
+			padding: 14px 0 5px 0
+			li
+				a
+					color: #fff 
+					border: none 
+		&_bg
+			background: #f6f6f6
+			padding: 5px 0 10px

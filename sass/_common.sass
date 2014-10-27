@@ -52,36 +52,83 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
+html
+	font-size: 62.5%
+.out
+	width: 100%
+	min-width: 1200px
+	background: #ffffff 
+// FONTS
++font("Roboto Regular", roboto-regular)
++font("Roboto Medium", roboto-medium)
++font("Roboto Bold", roboto-bold)
++font("Awesome", fontawesome-webfont)
+=reg
+	font-family: "Roboto Regular", Arial, sans-serif
+=med
+	font-family: "Roboto Medium", Arial, sans-serif 
+=bold
+	font-family: "Roboto Bold", Arial, sans-serif 
+=as
+	font-family: "Awesome", Arial, sans-serif 
 
 
-// common blocks      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=ttu
+	text-transform: uppercase
 
 
 
 
 
+//color
+$text: #292929
+$green: #80b50d
+$blue: #0095c6
+$yellow: #ffc600
+
+
+//text
+a
+	text-decoration: none
+	color: $blue 
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+h1, .heading
+	+fs(25)
+	+med
+	color: $text 
+	+ttu
+	padding: 0 15px
+	display: block 
+h2
+	+fs(21)
+	+med
+	color: $text
+	+ttu 
+	padding: 0 15px
+h3
+	+fs(15)
+	+med
+	color: $text
+h4
+	+fs(15)
+	+med
+	color: $text 
+p
+	+fs(14)
+	color: $text
+	+reg
+	line-height: 1.2
+	margin-bottom: 10px
+	a
+		+reg
+		+fs(14)
+		line-height: 1.2
+		color: $blue 
+		&:hover
+			text-decoration: underline
+	strong
+		+bold
 
 
 
