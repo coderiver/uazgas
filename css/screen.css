@@ -131,7 +131,7 @@ p strong { font-family: "Roboto Bold", Arial, sans-serif; }
 .header .contacts .request .is-green { color: #80b50d; font-size: 15px; font-size: 1.5rem; font-family: "Roboto Medium", Arial, sans-serif; }
 .header .contacts .request .contacts__title { margin-bottom: 0; }
 .header .contacts .callback { display: inline-block; vertical-align: bottom; padding: 0 0 0 35px; }
-.header .nav { padding-top: 15px; float: right; }
+.header .nav { margin-top: 15px; float: right; min-width: 960px; background: #292929; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .header .nav li { float: right; position: relative; }
 .header .nav li a { display: block; font-size: 15px; font-size: 1.5rem; color: white; font-family: "Roboto Medium", Arial, sans-serif; background: #0095c6; padding: 11px 13px 11px 12px; text-transform: uppercase; letter-spacing: 0.07px; }
 .header .nav li a i { margin-left: 9px; }
