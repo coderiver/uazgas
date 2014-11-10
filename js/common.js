@@ -100,4 +100,52 @@ $(document).ready(function() {
 		$(this).parents('body').find('.overlay, .js-popup, .js-popup-style').removeClass('is-open');
 		return false;
 	});
+	//SIDEMENU
+	$('.is-open-lvl1').on('click', function() {
+		$(this).toggleClass('is-active');
+		$(this).parent('li').find('.submenu-lvl1').toggleClass('is-open');
+		return false;
+	});
+	$('.is-open-lvl1_mod').on('click', function() {
+		$(this).toggleClass('is-active_mod');
+		$(this).parent('li').find('.submenu-lvl1').toggleClass('is-open');
+		return false;
+	});
+	$('.is-open-lvl2').on('click', function() {
+		if ($('.is-open-lvl2').hasClass('is-open')) {
+			$('.is-open-lvl2').removeClass('is-open');
+			$('.submenu-lvl2').removeClass('is-open');
+		}
+		else {
+			$(this).toggleClass('is-open');
+			$(this).parent('li').find('.submenu-lvl2').toggleClass('is-open');
+		};
+		return false;
+	});
+	$('.is-open-lvl3').on('click', function() {
+		if ($('.is-open-lvl3').hasClass('is-open')) {
+			$('.is-open-lvl3').removeClass('is-open');
+			$('.submenu-lvl3').removeClass('is-open');
+		}
+		else {
+			$(this).toggleClass('is-open');
+			$(this).parent('li').find('.submenu-lvl3').toggleClass('is-open');
+		};
+		return false;
+	});
+	$('.is-open-lvl4').on('click', function() {
+		if ($('.is-open-lvl4').hasClass('is-open')) {
+			$('.is-open-lvl4').removeClass('is-open');
+			$('.submenu-lvl4').removeClass('is-open');
+		}
+		else {
+			$(this).toggleClass('is-open');
+			$(this).parent('li').find('.submenu-lvl4').toggleClass('is-open');
+		};
+		return false;
+	});
+	$('.submenu-lvl4 a').on('click', function() {
+		$(this).toggleClass('is-active');
+		return false;
+	});
 });

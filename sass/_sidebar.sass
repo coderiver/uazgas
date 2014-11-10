@@ -7,11 +7,12 @@
 	&.sidebar-in
 		margin-top: 0
 	&__box
-		-moz-border-radius: 5px
-		-webkit-border-radius: 5px
-		-khtml-border-radius: 5px
-		border-radius: 5px
-		overflow: hidden
+		-moz-border-radius: 7px
+		-webkit-border-radius: 7px
+		-khtml-border-radius: 7px
+		border-radius: 7px
+		behavior: url(border-radius.htc)
+		// overflow: hidden
 		margin-bottom: 17px
 		&.is-blue
 			background: $blue 
@@ -23,10 +24,20 @@
 			.sidebar__title
 				background: $green 
 				color: #fff 
+				-moz-border-radius: 5px 5px 0 0
+				-webkit-border-radius: 5px 5px 0 0
+				-khtml-border-radius: 5px 5px 0 0
+				border-radius: 5px 5px 0 0
+				behavior: url(border-radius.htc)
 		&.is-yellow
 			border: 1px solid #d7d7d7
 			.sidebar__title
 				background: $yellow 
+				-moz-border-radius: 5px 5px 0 0
+				-webkit-border-radius: 5px 5px 0 0
+				-khtml-border-radius: 5px 5px 0 0
+				border-radius: 5px 5px 0 0
+				behavior: url(border-radius.htc)
 	&__title
 		height: 58px
 		+vertical
@@ -76,6 +87,7 @@
 	&__list
 		padding: 0
 		background: #ffffff 
+		position: relative
 		li
 			a
 				+reg
@@ -144,6 +156,38 @@
 				&.logo-electronics
 					i
 						+s(electronics)
+				&.is-active
+					background: #0080aa
+					&_mod
+						background: #e2e2e2
+						i.arr
+							+arr(12, 14, #f6f6f6, l)
+							content: "" 
+							position: absolute
+							top: 50%
+							margin-top: -7px
+							right: -18px
+							z-index: 999999
+							&:before
+								content: ""
+								position: absolute
+								top: -12px
+								right: -12px
+								+s(active-arr)
+					i.arr
+						+arr(12, 14, #0095c6, l)
+						content: "" 
+						position: absolute
+						top: 50%
+						margin-top: -7px
+						right: -18px
+						z-index: 999999
+						&:before
+							content: ""
+							position: absolute
+							top: -12px
+							right: -12px
+							+s(active-arr-blue)
 		&_mod
 			background: $blue 
 			padding: 14px 0 5px 0
@@ -154,3 +198,85 @@
 		&_bg
 			background: #f6f6f6
 			padding: 5px 0 10px
+			
+
+.submenu-style
+	width: 220px
+	position: absolute
+	top: 0
+	right: -100%
+	z-index: 9999
+	margin-right: -15px
+	+box-shadow(0 1px 6px rgba(0, 0, 0, 0.3))
+	background: #0095c6
+	padding-bottom: 15px
+	display: none
+	&.is-open
+		display: block
+	&.submenu-lvl1
+		margin-right: -18px
+	li
+		border-top: 1px dashed #65b4ce
+	a, .submenu__link
+		+reg
+		color: #fff
+		+fs(13)
+		display: block
+		&.is-open
+			position: relative
+			background: #0080aa 
+			+med
+			i
+				+arr(12, 14, #0095c6, l)
+				content: "" 
+				position: absolute
+				top: 50%
+				margin-top: -7px
+				right: -15px
+				z-index: 999999
+				&:before
+					content: ""
+					position: absolute
+					top: -12px
+					right: -12px
+					+s(active-arr-blue)
+		&.is-active
+			color: #0095c6
+			background: #ffffff  
+			+med
+			i
+				display: none
+			&:before 
+				display: none
+	.submenu__title
+		+fs(15)
+		+med
+		color: #fff
+		background: #292929
+		display: block
+		padding: 12px 20px 
+	&_mod
+		background: #f6f6f6
+		.submenu__title
+			color: #dbdbdb 
+		li
+			border-top: 1px dashed #d7d7d7
+		a, .submenu__link
+			color: #292929
+			&.is-open
+				background: #e2e2e2 
+				i
+					+arr(12, 14, #f6f6f6, l)
+					&:before
+						content: ""
+						position: absolute
+						top: -12px
+						right: -12px
+						+s(active-arr)
+			&.is-active
+				color: #fff
+				background: #0095c6
+				i
+					display: none
+				&:before 
+					display: none
