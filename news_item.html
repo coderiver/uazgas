@@ -11,6 +11,85 @@
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
+<div class="overlay"></div>
+<div class="js-popup">
+	<div class="js-popup-style js-callback">
+		<span class="js-close">x</span>
+		<form action="">
+			<span class="heading">Заявка на обратный звонок</span>
+			<label for="">
+				<span>Имя:</span>
+				<input type="text">
+			</label>
+			<label for="">
+				<span>Номер:</span>
+				<input type="text">
+			</label>
+			<input type="submit" value="Отправить" class="popup-submit">
+		</form>
+	</div>
+	<div class="js-popup-style js-request">
+		<span class="js-close">x</span>
+		<form action="">
+			<span class="heading">Заявка на детали</span>
+			<label for="">
+				<span>Имя:</span>
+				<input type="text">
+			</label>
+			<label for="">
+				<span>Фамилия:</span>
+				<input type="text">
+			</label>
+			<label for="">
+				<span>E-mail:</span>
+				<input type="text">
+			</label>
+			<label for="">
+				<span>Контактный телефон:</span>
+				<input type="text">
+			</label>
+			<div class="js-select-box">
+				<span class="name">Область</span>
+				<div class="select js-select">
+					<span class="select__text js-select-text">Выберите из списка</span>
+					<i class="fa fa-angle-down"></i>
+					<input type="hidden" class="js-select-input" value="0">
+					<ul class="select__list js-select-list">
+						<li data-id="0">Москва</li>
+						<li data-id="2">Одесса</li>
+						<li data-id="3">Питер</li>
+						<li data-id="4">Киев</li>
+						<li data-id="4">Пушкино!</li>
+					</ul>
+				</div>
+			</div>
+			<label for="">
+				<span>Город:</span>
+				<input type="text">
+			</label>
+			<input type="submit" value="Отправить" class="popup-submit">
+		</form>
+	</div>
+	<div class="js-popup-style js-map">
+		<span class="js-close">x</span>
+		<div class="map"></div>
+	</div>
+	<div class="js-popup-style js-login">
+		<span class="js-close">x</span>
+		<form action="">
+			<span class="heading">Вход в личный кабинет</span>
+			<label for="">
+				<span>Логин:</span>
+				<input type="text">
+			</label>
+			<label for="">
+				<span>Пароль:</span>
+				<input type="text">
+			</label>
+			<input type="submit" value="Войти" class="popup-submit">
+		</form>
+	</div>
+</div>
 <!-- BEGIN  out-->
 <div class="out">
 	<div class="header">
@@ -168,49 +247,49 @@
 					<h2>Технические характеристики (H2)</h2>
 					<table>
 						<tr>
-							<th></th>
+							<th class="is-first"></th>
 							<th>Classic</th>
 							<th>Comfort</th>
 							<th>Limited</th>
 						</tr>
-						<tr>
-							<td>Количество мест</td>
+						<tr class="is-bg">
+							<td class="is-first">Количество мест</td>
 							<td></td>
 							<td>5</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td>Длина, мм</td>
+							<td class="is-first">Длина, мм</td>
 							<td>4750</td>
 							<td>4785</td>
 							<td>4785</td>
 						</tr>
-						<tr>
-							<td>Ширина (без учета зеркал), мм</td>
+						<tr class="is-bg">
+							<td class="is-first">Ширина (без учета зеркал), мм</td>
 							<td></td>
 							<td>1900</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td>Ширина (с учетом зеркал), мм</td>
+							<td class="is-first">Ширина (с учетом зеркал), мм</td>
 							<td></td>
 							<td>2110</td>
 							<td></td>
 						</tr>
-						<tr>
-							<td>Высота, мм</td>
+						<tr class="is-bg">
+							<td class="is-first">Высота, мм</td>
 							<td>1910</td>
 							<td>2005</td>
 							<td>2005</td>
 						</tr>
 						<tr>
-							<td>Высота (без учета антенны), мм</td>
+							<td class="is-first">Высота (без учета антенны), мм</td>
 							<td>-</td>
 							<td>-</td>
 							<td>2000</td>
 						</tr>
-						<tr>
-							<td>Колесная база, мм</td>
+						<tr class="is-bg">
+							<td class="is-first">Колесная база, мм</td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -245,6 +324,10 @@
 </div>
 <!-- END out-->
 <!-- load scripts -->
-<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<script type="text/javascript" src="js/lib/jquery.js"></script>
+<script type="text/javascript" src="js/lib/cycle.js"></script>
+<script type="text/javascript" src="js/lib/cycle.carousel.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/lib/head.js"></script>
 </body>
 </html>

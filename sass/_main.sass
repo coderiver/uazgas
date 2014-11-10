@@ -17,19 +17,28 @@
 		box-shadow: 0 1px 0 #d7d7d7, inset 0 1px 3px rgba(0, 0, 0, 0.39)
 		display: inline-block
 		vertical-align: middle
+		-moz-border-radius: 5px 0 0 5px
+		-webkit-border-radius: 5px 0 0 5px
+		-khtml-border-radius: 5px 0 0 5px
 		border-radius: 5px 0 0 5px
+		behavior: url(border-radius.htc)
 		+fs(15)
 		+med
 		color: $text 
 		padding: 8px 15px 8px 15px
-		+placeholder-color(#979797)
+		value
+			color: #979797
 	&__submit
 		margin-left: -2px
 		+vertical
 		height: 37px
 		width: 204px
 		color: #fff
+		-moz-border-radius: 0 5px 5px 0
+		-webkit-border-radius: 0 5px 5px 0
+		-khtml-border-radius: 0 5px 5px 0
 		border-radius: 0 5px 5px 0
+		behavior: url(border-radius.htc)
 		background: #0093c4
 		&:hover
 			background: lighten(#0093c4, 5%)
@@ -54,7 +63,11 @@
 		display: inline-block
 		vertical-align: middle
 		color: #fff
+		-moz-border-radius: 5px
+		-webkit-border-radius: 5px
+		-khtml-border-radius: 5px
 		border-radius: 5px
+		behavior: url(border-radius.htc)
 		float: right
 		margin-top: 11px
 		position: relative
@@ -111,7 +124,11 @@
 		+vertical
 		width: 22px
 		height: 22px
+		-moz-border-radius: 50%
+		-webkit-border-radius: 50%
+		-khtml-border-radius: 50%
 		border-radius: 50%
+		behavior: url(border-radius.htc)
 		background: $blue
 		margin-right: 6px
 	i
@@ -236,7 +253,11 @@
 	display: inline-block
 	width: 422px
 	border: 1px solid #D7D7D7
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	-khtml-border-radius: 5px
 	border-radius: 5px
+	behavior: url(border-radius.htc)
 	text-align: left
 	padding: 14px 19px
 	margin: 15px 0  
@@ -324,7 +345,11 @@
 			+vertical
 			cursor: pointer
 			border: 1px solid #c1c1c1
+			-moz-border-radius: 5px
+			-webkit-border-radius: 5px
+			-khtml-border-radius: 5px
 			border-radius: 5px
+			behavior: url(border-radius.htc)
 			float: left
 			margin: 0 4px 
 			img
@@ -372,7 +397,11 @@
 		padding-bottom: 2px
 		+fs(15)
 		padding: 7px 13px 9px 13px
+		-moz-border-radius: 5px
+		-webkit-border-radius: 5px
+		-khtml-border-radius: 5px
 		border-radius: 5px
+		behavior: url(border-radius.htc)
 		position: relative
 		&:active
 			top: 1px
@@ -388,7 +417,11 @@
 			right: auto
 			left: -1px
 			margin-top: -2px
+			-moz-border-radius: 0 0 5px 5px
+			-webkit-border-radius: 0 0 5px 5px
+			-khtml-border-radius: 0 0 5px 5px
 			border-radius: 0 0 5px 5px
+			behavior: url(border-radius.htc)
 			overflow: hidden
 			li
 				padding: 4px 13px  
@@ -640,7 +673,11 @@
 				width: 40px
 				height: 36px
 				+vertical
+				-moz-border-radius: 5px
+				-webkit-border-radius: 5px
+				-khtml-border-radius: 5px
 				border-radius: 5px
+				behavior: url(border-radius.htc)
 				&:hover
 					color: lighten($blue, 10%) 
 				&:active
@@ -714,14 +751,14 @@
 				color: $text
 				border-left: 1px dotted #d7d7d7 
 				font-weight: normal
-				&:first-child
+				&.is-first
 					padding: 9px 20px 9px 18px
 					width: 530px
 					+med
 					border-left: none
 			th
 				+med
-			&:nth-child(even)
+			&.is-bg
 				background: #f6f6f6
 	ul
 		padding-left: 20px 
@@ -744,7 +781,11 @@
 				border: 1px solid #d8d8d8
 				background: #f6f6f6
 				content: ""  
+				-moz-border-radius: 50%
+				-webkit-border-radius: 50%
+				-khtml-border-radius: 50%
 				border-radius: 50%
+				behavior: url(border-radius.htc)
 			strong
 				+bold
 
@@ -829,7 +870,11 @@
 			padding: 8px 13px 8px
 			background-color: #FFF
 			border: 1px solid #D7D7D7
+			-moz-border-radius: 5px
+			-webkit-border-radius: 5px
+			-khtml-border-radius: 5px
 			border-radius: 5px
+			behavior: url(border-radius.htc)
 	.select
 		border: 1px solid #D7D7D7
 		box-shadow: none
@@ -842,7 +887,11 @@
 			right: auto
 			left: -1px
 			margin-top: -2px
+			-moz-border-radius: 0 0 5px 5px
+			-webkit-border-radius: 0 0 5px 5px
+			-khtml-border-radius: 0 0 5px 5px
 			border-radius: 0 0 5px 5px
+			behavior: url(border-radius.htc)
 			overflow: hidden
 			li
 				padding: 4px 13px  
@@ -880,7 +929,11 @@
 			padding: 8px 13px 8px
 			background-color: #FFF
 			border: 1px solid #D7D7D7
+			-moz-border-radius: 5px
+			-webkit-border-radius: 5px
+			-khtml-border-radius: 5px
 			border-radius: 5px
+			behavior: url(border-radius.htc)
 			margin-bottom: 8px
 		textarea
 			width: 882px
@@ -898,7 +951,7 @@
 	+vertical
 	text-align: left
 	border-top: 1px dotted #d7d7d7 
-	&:first-child
+	&.is-first
 		border-top: none
 	.left
 		+vertical
@@ -914,7 +967,6 @@
 			padding: 0 10px
 			img
 				max-width: 100%
-				min-height: 100%
 		p
 			margin: 0
 			span
@@ -977,7 +1029,11 @@
 				right: auto
 				left: -1px
 				margin-top: -2px
+				-moz-border-radius: 0 0 5px 5px
+				-webkit-border-radius: 0 0 5px 5px
+				-khtml-border-radius: 0 0 5px 5px
 				border-radius: 0 0 5px 5px
+				behavior: url(border-radius.htc)
 				overflow: hidden
 				li
 					padding: 4px 13px  
@@ -1060,7 +1116,11 @@
 				height: 36px
 				border: 1px solid #d7d7d7
 				display: block
+				-moz-border-radius: 5px
+				-webkit-border-radius: 5px
+				-khtml-border-radius: 5px
 				border-radius: 5px
+				behavior: url(border-radius.htc)
 				background: #fff
 				span
 					display: inline-block
@@ -1101,7 +1161,11 @@
 		height: 36px
 		border: 1px solid #d7d7d7
 		display: inline-block
+		-moz-border-radius: 5px
+		-webkit-border-radius: 5px
+		-khtml-border-radius: 5px
 		border-radius: 5px
+		behavior: url(border-radius.htc)
 		margin-left: 10px 
 		background: #fff
 		span
@@ -1136,7 +1200,11 @@
 					width: 36px
 					padding: 10px 0 8px 
 					color: $blue
+					-moz-border-radius: 4px
+					-webkit-border-radius: 4px
+					-khtml-border-radius: 4px
 					border-radius: 4px
+					behavior: url(border-radius.htc)
 					display: inline-block
 					span
 						display: inline-block
@@ -1163,19 +1231,143 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//popup
+.overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0, 0, 0, 0.5) 
+	z-index: 99999
+	display: none
+	&.is-open
+		display: block
+.js-popup
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 999999
+	+vertical
+	display: none
+	&.is-open
+		display: block
+.js-popup-style
+	display: inline-block
+	vertical-align: middle
+	background: #FFF 
+	width: 560px
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	-khtml-border-radius: 5px
+	border-radius: 5px
+	behavior: url(border-radius.htc)
+	padding: 30px 10px
+	position: relative
+	display: none
+	&.is-open
+		display: inline-block
+	.heading
+		display: block
+		padding: 0 10px 0 10px
+		margin-bottom: 20px
+	label
+		text-align: left
+		padding: 3px 10px
+		display: inline-block
+		vertical-align: top
+		width: 260px
+		span
+			color: $text 
+			+med
+			+fs(15)	
+			display: block
+			margin-bottom: 5px
+		input
+			width: 232px 
+			color: $text
+			+fs(15)
+			line-height: 1.3 
+			+med
+			padding: 8px 13px 8px
+			background-color: #FFF
+			border: 1px solid #D7D7D7
+			-moz-border-radius: 5px
+			-webkit-border-radius: 5px
+			-khtml-border-radius: 5px
+			border-radius: 5px
+			behavior: url(border-radius.htc)
+			margin-bottom: 8px
+	.popup-submit	
+		padding: 0 20px
+		height: 36px
+		background-color: $green
+		color: #fff 
+		-moz-border-radius: 5px
+		-webkit-border-radius: 5px
+		-khtml-border-radius: 5px
+		border-radius: 5px
+		behavior: url(border-radius.htc)
+		display: block
+		margin: 10px auto
+		+fs(15)
+		+med
+		&:hover
+			background: lighten($green, 5%)
+		&:active
+			background: darken($green, 5%)
+	.js-close
+		display: inline-block
+		+fs(20)
+		+med
+		+ttu
+		color: $text
+		position: absolute 
+		top: 10px
+		right: 15px
+		cursor: pointer
+	.name
+		color: $text 
+		+med
+		+fs(15)	
+		display: block
+		margin-bottom: 5px
+		text-align: left
+	.js-select-box
+		width: 260px
+		padding: 3px 10px
+		display: inline-block
+		vertical-align: top
+	.select
+		-webkit-box-shadow: none 
+		box-shadow: none 
+		width: 232px 
+		color: $text
+		+fs(15)
+		line-height: 1.3 
+		+med
+		height: auto
+		padding: 8px 13px 8px
+		background-color: #FFF
+		border: 1px solid #D7D7D7
+		-moz-border-radius: 5px
+		-webkit-border-radius: 5px
+		-khtml-border-radius: 5px
+		border-radius: 5px
+		behavior: url(border-radius.htc)
+		margin-bottom: 8px
+		.select__text
+			padding: 1px 30px 0 0 
+		.select__list
+			left: -1px
+			right: -1px
+			li
+				padding: 5px 15px 
+	.map
+		width: 560px
+		height: 300px
 
 
 

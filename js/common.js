@@ -1,4 +1,4 @@
-head.ready(function() {
+$(document).ready(function() {
 	//select
 	$(document).ready(function() {
 	    $(document).click(function() {
@@ -77,6 +77,27 @@ head.ready(function() {
 	$('.alphabet__item').on('click', function() {
 		$(this).parents('.alphabet__bottom').find('.alphabet__item').removeClass('is-active');
 		$(this).addClass('is-active');
+		return false;
+	});
+	//popup
+	$('.callback a').on('click', function() {
+		$(this).parents('body').find('.overlay, .js-popup, .js-callback').toggleClass('is-open');
+		return false;
+	});
+	$('.request a').on('click', function() {
+		$(this).parents('body').find('.overlay, .js-popup, .js-request').toggleClass('is-open');
+		return false;
+	});
+	$('.address a').on('click', function() {
+		$(this).parents('body').find('.overlay, .js-popup, .js-map').toggleClass('is-open');
+		return false;
+	});
+	$('.header__login a').on('click', function() {
+		$(this).parents('body').find('.overlay, .js-popup, .js-login').toggleClass('is-open');
+		return false;
+	});
+	$('.js-close, .overlay').on('click', function() {
+		$(this).parents('body').find('.overlay, .js-popup, .js-popup-style').removeClass('is-open');
 		return false;
 	});
 });
